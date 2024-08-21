@@ -71,5 +71,22 @@ internal class Program
         // Impressão da lista em uma única linha
         frutas.ForEach(Console.WriteLine);
 
+        //(----------------------------------------------------------------------------------------------------------------)
+
+        // TRABALHANDO COM DICIONÁRIO (DICTIONARY)
+
+        // Criando um Dicionário de Dados
+        Dictionary<int, string> carros = new Dictionary<int, string>();
+        // Adicionar Dados a um Dicionário
+        carros.Add(5, "Combe");
+        carros.Add(10, "Fusca");
+        carros.Add(2, "McQueen");
+
+        // Imprimir um Dicionário de Dados 
+        foreach (var carro in carros)
+        {
+            Console.WriteLine($"{carro.Key} - {carro.Value}");
+        }
+
     }
 }
